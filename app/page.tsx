@@ -1,7 +1,7 @@
+import Header from "./_components/header";
+
 const Home = () => {
-  return (
-    <div className="bg-fuchsia-700">hello Dione</div>
-  );
-}
+  return <Header />;
+};
 
 export default Home;
