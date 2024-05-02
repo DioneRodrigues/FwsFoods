@@ -9,3 +9,11 @@ export const calculeteProductTotalPrice = (product: Product): number => {
 
   return Number(product.price) - discount;
 };
+
+export const formatCurrency = (value: number): string => {
+  return Intl.NumberFormat("pt-br", {
+    style: "currency",
+    currency: "BRL",
+    minimumFractionDigits: 2,
+  }).format(value);
+};
